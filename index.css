@@ -1,0 +1,148 @@
+html,
+body {
+    color: black;
+    margin: 0 0 160px 0;
+}
+
+a,
+a:focus,
+a:hover {
+    color: black;
+}
+
+a:focus-visible {
+    outline: 2px solid #1672f3;
+    outline-offset: 4px;
+}
+
+a:focus:not(:focus-visible) {
+    outline: none;
+}
+
+header {
+    background-color: #fffbf0;
+    height: 60px;
+    width: 100%;
+}
+
+@media (min-height: 30em) {
+    header {
+        position: fixed;
+    }
+}
+
+header ul {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    margin: 6px;
+}
+
+header li:last-child {
+    order: -1;
+}
+
+header a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 0 16px;
+}
+
+
+@media (min-height: 30em) {
+    main {
+        padding-top: 60px;
+    }
+}
+
+
+@media (min-width: 800px) {
+    main {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.header-section {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+.btn {
+    background-color: #fec200;
+    border: 0;
+    border-radius: 4px;
+    height: 44px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn:focus-visible {
+    outline: 2px solid #1672f3;
+    outline-offset: 4px;
+}
+
+.btn:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #ffe699;
+}
+
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skip-link {
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    position: absolute;
+    width: 1px;
+}
+
+.skip-link:focus {
+    background-color: #fff;
+    border: 0;
+    clip: auto;
+    height: auto;
+    display: block;
+    position: absolute;
+    padding: 12px;
+    width: auto;
+    z-index: 12;
+}
+
+.icon {
+    display: flex;
+    height: 16px;
+    width: 16px;
+}
+
+.custom-btn-container {
+    max-width: 52px;
+}
+
+.custom-btn-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

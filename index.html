@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accessibility training</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <header>
+            <a href="#main" class="skip-link">Skip to main</a>
+            <nav aria-label="Primary" class="container">
+                <ul>
+                    <li><a href='/'>Link 2</a></li>
+                    <li><a href='/'>Link 3</a></li>
+                    <li><a href='/'>Link 1</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main" class="container">
+
+            <h1>Manual accessibility test</h1>
+
+            <nav aria-label="On this page">
+                <h2 class="header-section">On this page</h2>
+                <ul>
+                    <li>
+                        <a href="#section-1">Links</a>
+                    </li>
+                    <li>
+                        <a href="#section-2">Buttons</a>
+                    </li>
+                    <li>
+                        <a href="#section-3">Heading order</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="content">
+
+                <h2 class="header-section" id="section-1">Links</h2>
+
+                <a href='/'>Click here</a> to find out more about manual testing and <a href='/'>click here</a> to learn less
+                about manual testing.
+
+                <h2 class="header-section" id="section-2">Buttons</h2>
+
+                <div>
+                    <h3>Button with text</h3>
+                    <button class="btn">Search</button>
+                </div>
+
+                <div>
+                    <h3>Button with icon</h3>
+                    <button class="btn">
+                <span class='icon'>
+                  <svg viewBox="0 0 16 16">
+                    <path d="M6 0a6 6 0 0 1 4.89 9.477l4.646 4.644c.39.39.39 1.024 0 1.415-.391.39-1.024.39-1.415 0L9.477 10.89A6 6 0 1 1 6 0zm0 2C3.79 2 2 3.79 2 6s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"
+                          fill="currentColor" fill-rule="evenodd"></path>
+                  </svg>
+                </span>
+                    </button>
+                </div>
+
+                <div>
+                    <h3>Custom button</h3>
+                    <div class="custom-btn-container">
+                        <div class="btn">Search</div>
+                    </div>
+                </div>
+
+                <div class="header-section" id="section-3">Heading order</div>
+                <h3>Best practices:</h3>
+                <ul>
+                    <li>Use one unique h1 per page that describes what that page is about. That h1 preferably starts just above
+                        the main content.
+                    </li>
+                    <li>Use headings to describe the content below. Do not use an HTML heading just to make the text appear
+                        bigger or stand out.
+                    </li>
+                    <li>Use heading levels like the index of a book: hierarchical.</li>
+                    <li>Do not choose a heading by its size, but by its level in the context of the content.</li>
+                    <li>Do not skip a heading level from the top down.</li>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>
