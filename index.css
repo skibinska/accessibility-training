@@ -22,12 +22,14 @@ a:focus:not(:focus-visible) {
 header {
     background-color: #fffbf0;
     height: 60px;
+    position: fixed;
+    top: 0;
     width: 100%;
 }
 
-@media (min-height: 30em) {
-    header {
-        position: fixed;
+@media (max-height: 30em) {
+    .fix header {
+        position: static;
     }
 }
 
@@ -47,6 +49,10 @@ header li:last-child {
     order: -1;
 }
 
+.fix header li:last-child {
+    order: 0;
+}
+
 header a {
     display: block;
     padding: 12px;
@@ -63,8 +69,8 @@ main {
 }
 
 
-@media (min-height: 30em) {
-    main {
+@media (max-height: 30em) {
+    .fix main {
         padding-top: 60px;
     }
 }
