@@ -22,15 +22,18 @@ a:focus:not(:focus-visible) {
 header {
     background-color: #fffbf0;
     height: 60px;
-    position: fixed;
     top: 0;
     width: 100%;
 }
 
-@media (max-height: 30em) {
+@media (min-height: 30em) {
     .fix header {
-        position: static;
+        position: fixed;
     }
+}
+
+.not-fixed header {
+    position: fixed;
 }
 
 header ul {
@@ -49,7 +52,7 @@ header li:last-child {
     order: -1;
 }
 
-.fix header li:last-child {
+.fixed header li:last-child {
     order: 0;
 }
 
@@ -69,8 +72,8 @@ main {
 }
 
 
-@media (max-height: 30em) {
-    .fix main {
+@media (min-height: 30em) {
+    .fixed main {
         padding-top: 60px;
     }
 }
@@ -151,4 +154,26 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.cookies {
+    background-color: #beebf4;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.cookies h2 {
+    margin: 0;
+    padding-top: 20px;
+}
+
+@media (min-height: 30em) {
+    .fixed .cookies {
+        position: fixed;
+    }
+}
+
+.not-fixed .cookies {
+    position: fixed;
 }
